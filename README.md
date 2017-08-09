@@ -133,10 +133,10 @@ $  mvn spring-boot:run
 
 * Machine mac-book pro Processor - 2.7 GHz Intel dual Core i5 and Ram - 8 GB 1867 MHz DDR3 and 128 GB SSD.
 
-![Spark one million](firehose/src/main/resources/spark_stats/Spark-1.png "Spark UI")
-![Spark scheduling delay](firehose/src/main/resources/spark_stats/spark-2.png "Spark UI")
-![Spark Bath status](firehose/src/main/resources/spark_stats/spark-3.png "Spark UI")
-![Complete Data Processed](firehose/src/main/resources/spark_stats/spark-4.png "Spark UI")
+![Spark one million](/src/main/resources/spark_stats/Spark-1.png "Spark UI")
+![Spark scheduling delay](/src/main/resources/spark_stats/spark-2.png "Spark UI")
+![Spark Bath status](/src/main/resources/spark_stats/spark-3.png "Spark UI")
+![Complete Data Processed](/src/main/resources/spark_stats/spark-4.png "Spark UI")
 
 ### Performance Tuning spark streaming.
 
