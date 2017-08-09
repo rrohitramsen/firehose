@@ -89,7 +89,7 @@ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 3 -
 
 ### Kafka Producer Properties
 
-* Update Kafka producer properties in [application.yml](firehose/src/main/resources/application.yml)
+* Update Kafka producer properties in [application.yml](/src/main/resources/application.yml)
 
 ```
 bootstrap servers: : localhost:9093,localhost:9094,localhost:9095
@@ -98,7 +98,7 @@ bootstrap servers: : localhost:9093,localhost:9094,localhost:9095
 
 ### Spark consumer Properties
 
-* Update Spark consumer properties in [application.yml](firehose/src/main/resources/application.yml)
+* Update Spark consumer properties in [application.yml](/src/main/resources/application.yml)
 
 ```
 bootstrap servers: : localhost:9093,localhost:9094,localhost:9095
@@ -107,7 +107,7 @@ zookeeper connect: localhost:2181
 ```
 
 ### Stock market data location
-* Update data location in [application.yml](firehose/src/main/resources/application.yml)
+* Update data location in [application.yml](/src/main/resources/application.yml)
 
 ```
 data location: /Users/rohitkumar/Work/code-brusher/firehose/src/main/resources/data
