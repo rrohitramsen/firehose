@@ -1,0 +1,53 @@
+producer:
+  bootstrap:
+    servers: 10.167.13.151:9093,10.167.13.151:9094,10.167.13.151:9095
+  acks : all
+  retries : 0
+  batch:
+    size: 16384
+  linger:
+    ms: 1
+  buffer:
+    memory: 33554432
+  key:
+    serializer: org.apache.kafka.common.serialization.StringSerializer
+  value:
+    serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+
+consumer:
+  bootstrap:
+    servers: 10.167.13.151:9093,10.167.13.151:9094,10.167.13.151:9095
+  metadata:
+    broker:
+      list: 10.167.13.151:9093,10.167.13.151:9094,10.167.13.151:9095
+
+# This setting is specificaly for kafka-0_8_2
+  zookeeper:
+    connect: 10.167.13.151:2181
+
+  group:
+    id: group-1
+  enable:
+    auto:
+      commit: true
+  auto:
+    commit:
+      interval:
+        ms: 1000
+    offset:
+      reset: earliest
+  session:
+    timeout:
+      ms: 30000
+  key:
+    deserializer: org.apache.kafka.common.serialization.StringSerializer
+  value:
+    deserializer: org.apache.kafka.common.serialization.ByteArraySerializer
+
+data:
+  location: /Users/rohitkumar/Work/code-brusher/firehose/src/main/resources/data
+
+firehose:
+  threadcount: 4
+  topic : test-firehose
+

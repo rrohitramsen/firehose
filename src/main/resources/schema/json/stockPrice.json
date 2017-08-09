@@ -1,0 +1,46 @@
+{
+  "type" : "object",
+  "id" : "StockPrice",
+  "properties" : {
+    "date" : {
+      "type": "string",
+      "format": "date-time"
+    },
+    "openPrice" : {
+      "type" : "number"
+    },
+    "highPrice" : {
+      "type" : "number"
+    },
+    "lowPrice" : {
+      "type" : "number"
+    },
+    "closePrice" : {
+      "type" : "number"
+    },
+    "wap" : {
+      "type" : "number"
+    },
+    "noOfShares" : {
+      "type" : "integer"
+    },
+    "noOfTrades" : {
+      "type" : "integer"
+    },
+    "totalTurnover" : {
+      "type" : "number"
+    },
+    "deliverableQuantity" : {
+      "type" : "integer"
+    },
+    "deliQtyToTradedQty" : {
+      "type" : "number"
+    },
+    "spreadHighLow" : {
+      "type" : "number"
+    },
+    "spreadCloseOpen" : {
+      "type" : "number"
+    }
+  }
+}
